@@ -1,0 +1,15 @@
+milista = []
+for i in range(0, 5):  # son 50 pero lo dejamos en 5 para facilidad de comprobacion
+    milista.append(int(input("ingrese elementos:")))
+print(milista)
+
+
+def promedio(a):
+    suma = 0
+    for x in a:
+        suma = suma+x
+    division = suma/len(a)
+    return division
+
+
+print(promedio(milista))
